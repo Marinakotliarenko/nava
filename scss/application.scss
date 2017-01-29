@@ -1,0 +1,94 @@
+/*----------------------------------------------------------------------------------*/
+@import "reset";
+@import "mixin";
+@import "default-classes";
+@import "site-header";
+@import "hero-section";
+@import "site-footer";
+@import "video-bg";
+@import "numbers-section";
+/*----------------------------------------------------------------------------------*/
+.destinations-section, .boats-section {
+  .grid-panels {
+    width: 85%;
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+    @media (min-width: 1440px) {
+      width: 100%;
+    }
+    margin-bottom: 5rem;
+  }
+  .panel-item {
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 60%;
+      width: calc(100% - 30px);
+      margin-left: 15px;
+      opacity: 0.6;
+      background-image: linear-gradient(to top, black 0%, transparent 100%);
+      border-radius: 5px;
+    }
+    &:hover {
+      .panel-img {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      &::after {
+        height: 100%;
+      }
+    }
+
+    .panel-img {
+      width: 100%;
+      height: auto;
+
+    }
+    .panel-descr {
+      z-index: 1;
+      position: absolute;
+      top: 45px;
+      left: 30px;
+      height: 78%;
+      .boat-number {
+        width: 90px;
+        height: 40px;
+        .sailboat{
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+  }
+  .explore {
+    margin-bottom: 5rem;
+    width: 250px;
+    height: 50px;
+  }
+}
+.boat-owners-section {
+  height: 60vh;
+  background: url("../images/bg-boat.jpg") 50% 50% /cover no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  .make-money {
+    width: 250px;
+    height: 50px;
+  }
+}
+
+
+
+
+
+
+

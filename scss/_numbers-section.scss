@@ -1,0 +1,34 @@
+.numbers-section {
+  z-index: 50;
+  position: relative;
+  width: 70%;
+  top: -50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(52, 52, 52, 0.15);
+  .number-item {
+    position: relative;
+    height: 100px;
+    @media (max-width: 768px) {
+      height: 70px;
+    }
+    &:last-child::after {
+      content:none;
+    }
+    @media (max-width: 768px) {
+      &:nth-child(2)::after {
+        content: none;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 1px;
+      height: 50px;
+      opacity: 0.3;
+      background-color: #717171;
+    }
+  }
+}

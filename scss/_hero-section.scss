@@ -1,0 +1,42 @@
+.hero-section {
+  .dest {
+    width: 440px; //769px
+    height: 50px; //60px
+    border-radius: 5px 0 0 5px;
+    border-color: #fff;
+    @include placeholder {
+      text-transform: uppercase;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+  .find {
+    width: 140px; //200px
+    height: 50px; //60px
+    border-radius: 0 5px 5px 0;
+    @media (max-width: 767px) {
+      border-radius: 5px;
+    }
+  }
+}
+#ui-id-1 {
+  z-index: 200;
+  width: 440px;
+  background-color: #fff!important;
+  border: 1px solid rgba(38, 38, 38, 0.3);
+  border-radius: 5px;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  background-color: #e7434e;
+  border: 1px solid #404040;
+}
+
+
+

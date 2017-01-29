@@ -1,0 +1,12 @@
+{
+  "name": "mars",
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6",
+    "fontawesome": "4.7.0",
+    "jquery-ui": "1.12.1",
+    "google-font-open-sans": "https://google-fonts.azurewebsites.net/googleFonts/openSans?family=Open+Sans:300,400,600,700,800",
+    "google-font-raleway": "https://google-fonts.azurewebsites.net/googleFonts/raleway?family=Raleway:400,500,700,800"
+
+
+  }
+}

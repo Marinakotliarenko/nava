@@ -1,0 +1,45 @@
+@mixin open-sans ($font-size){
+  font: $font-size 'Open Sans', sans-serif;
+}
+@mixin transform ($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+@mixin translate ($x, $y) {
+  @include transform(translate($x, $y));
+}
+                     //to make placeholder mixin
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+    @content;
+  }
+
+  &::-moz-placeholder {  /* Firefox 19+ */
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+@mixin flex-flow($flow) {
+  -webkit-flex-flow: $flow;
+  -moz-flex-flow: $flow;
+  -ms-flex-flow: $flow;
+  flex-flow: $flow;
+}

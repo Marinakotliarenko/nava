@@ -1,0 +1,128 @@
+$font-base: 12px;
+html {
+  font-size: $font-base;
+  @media (min-width: 1440px) {
+    font-size: 14px;
+  }
+}
+.container {
+  @media (max-width: 978px){
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.wrapper {
+  @include open-sans($font-base);
+  @media (max-width: 575px) {
+    font-size: 1.2rem;
+  }
+  color: #717171;
+}
+.font-raleway {
+  font: $font-base 'Raleway', sans-serif;
+  @media (max-width: 575px) {
+    font-size: 1.2rem;
+  }
+}
+a{
+  @include open-sans(12px);
+  @media (max-width: 575px) {
+    font-size: 1.2rem;
+  }
+  transition: all 0.3s ease-out;
+  -webkit-transition:  all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+a:hover, a:active {
+  //color: rgba(255,255,255,.5);
+}
+.hidden {
+  display: none;
+}
+.visible {
+ display: list-item;
+}
+.font-base {
+  font-size: 1rem;
+}
+.font-medium {
+  font-size: 1.143rem; //16px -font-base14
+}
+.font-big {
+  font-size: 1.286rem; //18
+}
+.font-large {
+  font-size: 1.429rem; //20
+}
+.font-great {
+  font-size: 1.714rem; //24
+}
+.font-huge {
+  font-size: 2.143rem; //30
+  @media (max-width: 575px) {
+    font-size: 1.8rem;
+  }
+}
+.font-massive {
+  font-size: 5.143rem; //72px
+  @media (max-width: 575px) {
+    font-size: 4rem;
+  }
+}
+.font-weight-bold {
+  font-weight: 700;
+}
+.line-h-medium{
+  line-height: 1.1;
+}
+.line-h-big {
+
+}
+.text-light {
+  color: #f9fafe;
+}
+.text-dark {
+  color: #343434;
+}
+.bg-transp {
+  background-color: transparent;
+}
+.bg-white {
+  background-color: white;
+}
+.bg-red {
+  background-color: #e7434e;
+}
+.bg-grey {
+  background-color: #404040;
+}
+.border-radius-base {
+  border-radius: 5px;
+}
+.btn-border-grey {
+  border: 1px solid rgba(38, 38, 38, 0.3);
+}
+.hover-transition {
+  transition: all 0.3s ease-out;
+  -webkit-transition:  all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+.sailboat {
+  width: 12px;
+  height: 12px;
+}
+.flex-grow-zero {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+

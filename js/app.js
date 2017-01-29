@@ -7,6 +7,11 @@ $( document ).ready(function() {
 
     $(".explore").on('click', onClickExplore );
 
+    $("#boat-owners-container").one('mouseover', function() {
+        $('#boat-owners-video')[0].play();
+    });
+
+
     function onClickExplore () {
         var breakpoint = 768;
         var windowWidth = $(window).width();

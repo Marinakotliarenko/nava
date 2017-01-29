@@ -74,7 +74,7 @@
   }
 }
 .boat-owners-section {
-  height: 60vh;
+  height: 100vh;
   background: url("../images/bg-boat.jpg") 50% 50% /cover no-repeat;
   -webkit-background-size:cover;
   -moz-background-size:cover;
@@ -84,6 +84,15 @@
     width: 250px;
     height: 50px;
   }
+  //.modal-backdrop {
+  //  z-index: -1;
+  //}
+  //.modal.show .modal-dialog {
+  //  z-index: 2000;
+  //}
+  //.modal-content {
+  //  z-index: 3000;
+  //}
 }
 
 
